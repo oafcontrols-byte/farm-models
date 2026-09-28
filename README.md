@@ -17,4 +17,4 @@ Farm Camera voice notes. No farm data here — third-party model files only.
 | tokenizer.json | 2128466 | 929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df |
 | vocabulary.txt | 422309 | ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf |
 
-The files are attached to the release `speech-base-en-v1` (Releases, right-hand side), not stored in git.
+The files are in the folder `speech-base-en-v1/`. `model.bin` is stored as two pieces (`model.bin.part0` + `model.bin.part1`, joined in that order) because GitHub refuses single files over 100 MB. Joined, it must match the sha256 above.
