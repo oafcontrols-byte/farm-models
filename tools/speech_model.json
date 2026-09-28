@@ -1,0 +1,38 @@
+{
+  "name": "speech-base-en",
+  "version": "v1",
+  "what": "Whisper base.en, CTranslate2 format, for faster-whisper. MIT (openai/whisper).",
+  "upstream": "https://huggingface.co/Systran/faster-whisper-base.en @ 3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+  "files": {
+    "model.bin": {
+      "bytes": 145216508,
+      "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef",
+      "parts": [
+        {
+          "name": "model.bin.part0",
+          "bytes": 73000000,
+          "sha256": "359aa480396fad82046d24af989d343835e35e044d38922fc6e3c870d1ccc8e1"
+        },
+        {
+          "name": "model.bin.part1",
+          "bytes": 72216508,
+          "sha256": "dc4a29f3eb112fe9153dd4a658aff9a477a7a6e9d598afb2c7ffe7255e56e867"
+        }
+      ]
+    },
+    "config.json": {
+      "bytes": 2227,
+      "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+    },
+    "tokenizer.json": {
+      "bytes": 2128466,
+      "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+    },
+    "vocabulary.txt": {
+      "bytes": 422309,
+      "sha256": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+    }
+  },
+  "source_base": "https://raw.githubusercontent.com/oafcontrols-byte/farm-models/04e050e5da5a73c60617f772a519640046a0b83b/speech-base-en-v1/",
+  "source_repo": "https://github.com/oafcontrols-byte/farm-models (public, third-party model files only)"
+}

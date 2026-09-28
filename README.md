@@ -18,3 +18,11 @@ Farm Camera voice notes. No farm data here — third-party model files only.
 | vocabulary.txt | 422309 | ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf |
 
 The files are in the folder `speech-base-en-v1/`. `model.bin` is stored as two pieces (`model.bin.part0` + `model.bin.part1`, joined in that order) because GitHub refuses single files over 100 MB. Joined, it must match the sha256 above.
+
+## tools/
+
+- `speech_model.py` + `speech_model.json` — find this model on the machine, fingerprint-checked,
+  or fetch it (from this repo's own checkout if present, else from GitHub) and cache it.
+- `voice_job.py` — turns a Farm Camera voice job (`<stamp>_voice.m4a` + `<stamp>_job.json`) into
+  a note on each photo: each sentence goes to the photo whose shutter is nearest. Needs
+  `pip install faster-whisper`. No farm data lives here; the jobs stay in the private repos.
